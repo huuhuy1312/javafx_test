@@ -1,0 +1,70 @@
+#pane {
+    -fx-background-color: rgba(0,150,150,1);
+    -fx-background-size: 100% 100%;
+    -fx-padding: 20px; /* Add padding to the StackPane */
+    -fx-pref-width: 100%;
+}
+
+.formQuestion {
+    -fx-pref-width: 100%; /* Chiều rộng ưu tiên là 60% của pane */
+    -fx-spacing: 10px; /* Khoảng cách giữa các thành phần bên trong VBox */
+    -fx-alignment: CENTER; /* Căn giữa các thành phần bên trong theo chiều dọc và bên trái */
+
+}
+
+
+
+.question-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333; /* Text color */
+}
+
+.answer-textfield {
+    -fx-pref-width: 200px; /* Preferred width of the TextField */
+    -fx-pref-height: 30px; /* Preferred height of the TextField */
+    -fx-font-size: 14px;
+}
+
+.submit-button {
+    -fx-pref-width: 100px; /* Preferred width of the Button */
+    -fx-pref-height: 30px; /* Preferred height of the Button */
+    -fx-background-color: #4CAF50; /* Button background color */
+    -fx-text-fill: white; /* Button text color */
+    -fx-font-weight: bold;
+}
+
+.submit-button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+.answer-options {
+    -fx-spacing: 10px; /* Khoảng cách giữa các lựa chọn */
+}
+
+/* Style cho mỗi lựa chọn */
+.option-label {
+    -fx-font-size: 14px; /* Kích cỡ chữ */
+    -fx-padding: 10px; /* Đệm xung quanh nội dung */
+    -fx-background-color: #f0f0f0; /* Màu nền */
+    -fx-border-color: #ccc; /* Màu viền */
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-border-radius: 5px; /* Độ cong của viền */
+}
+
+.option-label:hover {
+    -fx-background-color: #e0e0e0; /* Màu nền khi di chuột vào */
+}
+
+.option-label:selected {
+    -fx-background-color: #4CAF50; /* Màu nền khi được chọn */
+    -fx-text-fill: white; /* Màu chữ khi được chọn */
+}
+.choice{
+    -fx-background-color:white;
+    -fx-pref-width:50px;
+    -fx-pref-height:30px;
+    -fx-background-radius: 10px;
+     -fx-shape: "M 10 0 L 40 0 Q 50 0, 50 10 L 50 20 Q 50 30, 40 30 L 10 30 Q 0 30, 0 20 L 0 10 Q 0 0, 10 0 Z";
+        -fx-alignment: center; /* Để căn giữa nội dung của Label */
+}
+
